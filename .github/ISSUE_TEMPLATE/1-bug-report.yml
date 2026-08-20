@@ -1,9 +1,21 @@
-name: "🐞 Bug Report"
-description: "Report an issue to help the project improve."
-title: "[Bug]: "
-labels: ["Bug"]
+name: '🐞 Bug Report'
+description: 'Report an issue to help the project improve.'
+title: '[Bug]: '
+labels: ['Bug']
 type: bug
 body:
+  - type: markdown
+    attributes:
+      value: |
+        > [!CAUTION]
+        > ### Please check open issues before submitting!
+        > 📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛
+        >
+        > Oh, hi there! 😄
+        >
+        > To expedite issue processing, please search open and closed issues before submitting a new one. Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.md`
+        >
+        > 📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛
   - type: textarea
     id: describe-the-bug
     attributes:
@@ -45,29 +57,24 @@ body:
       label: Attachment(s)
       description: If applicable, add screenshots or videos to help explain your problem.
     validations:
-      accept: ".png,.jpg,.jpeg,.gif,.webp,.mp4,.mov,.webm"
-  - type: textarea
-    id: your-environment
+      accept: '.png,.jpg,.jpeg,.gif,.webp,.mp4,.mov,.webm'
+  - type: input
+    id: your-environment-os
     attributes:
-      label: Your environment
-      description: Use all the applicable bulleted list elements for this specific issue, and remove all the bulleted list elements that are not relevant for this issue.
-      value: |
-        * OS name and version: (e.g., Ubuntu 5.4.0-26-generic x86_64 / Windows 1904 ...)
-        * Browser name and version:
+      label: Your environment — OS
+      description: The name and version of the operating system used when you encountered this issue.
+      placeholder: (e.g., Windows 11, macOS Tahoe, Ubuntu 26.04 LTS, etc.)
+    validations:
+      required: true
+  - type: input
+    id: your-environment-browser
+    attributes:
+      label: Your environment — Browser
+      description: The name and version of the web browser used when you encountered this issue (When applicable).
+      placeholder: (e.g., Google Chrome 151, Mozilla Firefox 153, Safari 26, etc.)
   - type: textarea
     id: additional-context
     attributes:
       label: Additional context
       description: Add any other context or additional information about the problem here.
       placeholder: It may be helpful to know that...
-  - type: markdown
-    attributes:
-      value: |
-        📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛
-
-        Oh, hi there! 😄
-
-        To expedite issue processing, please search open and closed issues before submitting a new one.
-        Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.md`
-
-        📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛
