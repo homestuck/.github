@@ -4,23 +4,21 @@ title: "[Bug]: "
 labels: ["Bug"]
 type: bug
 body:
-  - type: markdown
-    attributes:
-      value: | 
-        # **🐞 Bug Report**
   - type: textarea
     id: describe-the-bug
     attributes:
       label: Describe the bug
       description: A clear and concise description of what the bug is.
+      placeholder: What happened is...
     validations:
       required: true
   - type: checkboxes
     id: is-this-a-regression
     attributes:
       label: Is this a regression?
+      description: Did this behavior work as intended in the previous version?
       options:
-        - label: Did this behaviour used to work in the previous version?
+        - label: Yes, this issue did not exist in the previous version.
   - type: textarea
     id: to-reproduce
     attributes:
@@ -34,10 +32,11 @@ body:
     validations:
       required: true
   - type: textarea
-    id: expected-behaviour
+    id: expected-behavior
     attributes:
-      label: Expected behaviour
+      label: Expected behavior
       description: A clear and concise description of what you expected to happen.
+      placeholder: What should be happening is...
     validations:
       required: true
   - type: upload
@@ -53,13 +52,14 @@ body:
       label: Your environment
       description: Use all the applicable bulleted list elements for this specific issue, and remove all the bulleted list elements that are not relevant for this issue.
       value: |
-        * OS: <!--[e.g. Ubuntu 5.4.0-26-generic x86_64 / Windows 1904 ...]-->
+        * OS name and version: (e.g., Ubuntu 5.4.0-26-generic x86_64 / Windows 1904 ...)
         * Browser name and version:
   - type: textarea
     id: additional-context
     attributes:
       label: Additional context
       description: Add any other context or additional information about the problem here.
+      placeholder: It may be helpful to know that...
   - type: markdown
     attributes:
       value: |
