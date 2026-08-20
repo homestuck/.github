@@ -19,7 +19,8 @@ body:
     id: is-this-a-regression
     attributes:
       label: Is this a regression?
-      description: Did this behaviour used to work in the previous version?
+      options:
+        - label: Did this behaviour used to work in the previous version?
   - type: textarea
     id: to-reproduce
     attributes:
