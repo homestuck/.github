@@ -4,19 +4,6 @@ title: '[Bug]: '
 labels: ['Bug']
 type: bug
 body:
-  - type: markdown
-    attributes:
-      value: |
-        > [!CAUTION]
-        > ### Please check open issues before submitting!
-        > 📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛
-        >
-        > Oh, hi there! 😄
-        >
-        > To expedite issue processing, please search open and closed issues before submitting a new one.
-        > Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.md`
-        >
-        > 📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛
   - type: textarea
     id: describe-the-bug
     attributes:
@@ -79,3 +66,16 @@ body:
       label: Additional context
       description: Add any other context or additional information about the problem here.
       placeholder: It may be helpful to know that...
+  - type: markdown
+    attributes:
+      value: |
+        > [!CAUTION]
+        > ### Please check open issues before submitting!
+        > 📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛
+        >
+        > Oh, hi there! 😄
+        >
+        > To expedite issue processing, please search open and closed issues before submitting a new one.
+        > Please read our Rules of Conduct at this repository's `.github/CODE_OF_CONDUCT.md`
+        >
+        > 📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛📛
